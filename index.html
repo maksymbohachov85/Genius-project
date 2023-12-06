@@ -10,14 +10,15 @@
 <body>
   <header>
     <nav>
-      <a href="#">
+      <a href="/">
+        <!-- Для файлу index.html у атрибуті href ми можемо задати значення "/" замість прописування шляху до файлу -->
         <img src="./images/logo.svg" alt="Логотип сучасної пекарні">
       </a>
       <ul>
-        <li><a href="#">Наші традиції</a></li>
-        <li><a href="#">Шеф-кухарі</a></li>
-        <li><a href="#">Формати</a></li>
-        <li><a href="#">Контакти</a></li>
+        <li><a href="#traditions-section">Наші традиції</a></li>
+        <li><a href="#chefs-sections">Шеф-кухарі</a></li>
+        <li><a href="#formats-sections">Формати</a></li>
+        <li><a href="#contact-sections">Контакти</a></li>
       </ul>
     </nav>
     <button type="button">Замовити дзвінок</button>
@@ -26,7 +27,7 @@
     <section>
       <h1>Сучасна пекарня</h1>
     </section>
-    <section>
+    <section id="traditions-section">
       <ul>
         <li>Великий попит на ринку</li>
         <li>Доступні за бюджетом формати</li>
@@ -43,8 +44,8 @@
       </p>
       <img src="./images/baker-man.jpg" alt="Чоловік-пекар дивиться на батони із посмішкою">
     </section>
-    <section>
-      <h2>Наші найкращі шеф -кухарі</h2>
+    <section id="chefs-sections">
+      <h2>Наші найкращі шеф - кухарі</h2>
       <ul>
         <li>
           <article>
@@ -67,28 +68,31 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section id="formats-sections">
       <h2>Формати</h2>
       <ul>
         <li>
           <article>
-            <h3>Walrus</h3>
+            <h3 lang="en">Walrus</h3>
           </article>
         </li>
         <li>
           <article>
-            <h3>Horseshoe</h3>
+            <h3 lang="en">Horseshoe</h3>
           </article>
         </li>
         <li>
           <article>
-            <h3>Handlebar</h3>
+            <h3 lang="en">Handlebar</h3>
           </article>
         </li>
       </ul>
     </section>
-    <section>
+    <section id="contact-sections">
       <h2>Приєднуйся до мережі пекарень</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1638712576564!2d30.48865857630498!3d50.45667308691592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sie!4v1701877416399!5m2!1sru!2sie"
+        width="603" height="595" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
   <footer>
@@ -97,8 +101,8 @@
         <img src="./images/logo.svg" alt="Логотип сучасної пекарні">
       </a>
       <ul>
-        <li><a href="#">Франшиза</a></li>
         <li><a href="#">Наші традиції</a></li>
+        <li><a href="#">Шеф-кухарі</a></li>
         <li><a href="#">Формати</a></li>
         <li><a href="#">Контакти</a></li>
       </ul>
@@ -127,8 +131,8 @@
           </a>
         </li>
       </ul>
-      <a href="#">Політика конфіденційності</a>
-      <p>© 2022 Дані захищені</p>
+      <a href="#" target="_blank">Політика конфіденційності</a>
+      <p>&copy; 2022 Дані захищені</p>
     </address>
   </footer>
 </body>
